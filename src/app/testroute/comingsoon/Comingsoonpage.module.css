@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
+.ComingSoonImage {
+    background-image: url("https://plus.unsplash.com/premium_photo-1661964205360-b0621b5a9366?q=80&w=2038&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+     
+}
+
+.style_script_regular {
+    font-family: "Style Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+@keyframes tublight_animation_text {
+    0%, 18%, 20%, 50.1%, 60%, 65.1%, 80%, 90.1%, 92% {
+        color: #0e3742;
+        text-shadow: none;
+    }
+    18.1%, 20.1%, 30%, 50%, 60.1%, 65%, 80.1%, 90%, 92.1%, 100% {
+        color: #fff;
+        text-shadow: 0 0 10px #03bcf4,
+                    0 0 20px #03bcf4,
+                    0 0 40px #03bcf4,
+                    0 0 80px #03bcf4,
+                    0 0 160px #03bcf4;
+    }
+}
+
+@keyframes tubelight_animation_box {
+    0%, 18%, 20%, 50.1%, 60%, 65.1%, 80%, 90.1%, 92% {
+        color: #0e3742;
+        box-shadow: none;
+        border: 6px solid gray;
+    }
+    18.1%, 20.1%, 30%, 50%, 60.1%, 65%, 80.1%, 90%, 92.1%, 100% {
+        color: #fff;
+        border: 6px solid white;
+        box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.425),
+                    -5px -5px 10px rgba(255, 255, 255, 0.425);
+    }
+}
+
+.tubelight_text_animation {
+    position: relative;
+    letter-spacing: 15px;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    -webkit-box-reflect: below 1px liner-gradient(transparent, #0008);
+    line-height: 0.70em;
+    outline: none;
+    animation: tublight_animation_text 5s linear infinite;
+}
+
+.tubelight_card_animation {
+    animation: tubelight_animation_box 5s linear infinite;
+}
+  
+@media only screen and (max-width: 600px) {
+    .tubelight_text_animation {
+      letter-spacing: 5px;
+    }
+  }
